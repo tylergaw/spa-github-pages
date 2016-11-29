@@ -9,14 +9,12 @@ import PageNotFound from './components/PageNotFound';
 import ExampleComponent from './components/ExampleComponent';
 import ExampleTwoDeepComponent from './components/ExampleTwoDeepComponent';
 
-const basePath = (process.env.NODE_ENV === 'production') ? 'spa-github-pages' : '';
-
 const routes = (
-  <Route path={`/${basePath}`} mapMenuTitle="Home" component={App}>
+  <Route path="/spa-github-pages" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home} />
 
-    <Route path={`${basePath}/example`} mapMenuTitle="Example" component={ExampleComponent}>
-      <Route path={`${basePath}/two-deep`} mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
+    <Route path="spa-github-pages/example" mapMenuTitle="Example" component={ExampleComponent}>
+      <Route path="spa-github-pages/two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
     </Route>
 
     <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
