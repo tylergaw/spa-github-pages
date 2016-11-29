@@ -5,7 +5,6 @@ import 'current-input';
 
 import App from './components/App';
 import Home from './components/Home';
-import PageNotFound from './components/PageNotFound';
 import ExampleComponent from './components/ExampleComponent';
 import ExampleTwoDeepComponent from './components/ExampleTwoDeepComponent';
 
