@@ -13,8 +13,8 @@ const routes = (
   <Route path="/spa-github-pages" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home} />
 
-    <Route path="spa-github-pages/example" mapMenuTitle="Example" component={ExampleComponent}>
-      <Route path="spa-github-pages/two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
+    <Route path="/spa-github-pages/example" mapMenuTitle="Example" component={ExampleComponent}>
+      <Route path="/spa-github-pages/two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
     </Route>
 
     <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
